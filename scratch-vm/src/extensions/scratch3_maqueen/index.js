@@ -195,7 +195,7 @@ class Scratch3_Maqueen_Blocks {
 	* @return {string} - the ID of this extension.
 	*/
 	static get EXTENSION_ID () {
-		return 'Maqueen';
+		return 'maqueen';
 	}
 
 	get SIDE_ALL_MENU () {
