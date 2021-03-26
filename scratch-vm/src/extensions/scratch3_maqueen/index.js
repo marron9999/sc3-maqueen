@@ -80,7 +80,7 @@ class Maqueen {
 
 	send (cmd, data) {
 		if( this._runtime._mbitlink.instance != null) {
-			this._runtime._mbitlink.instance.send(cmd + data); 
+			this._runtime._mbitlink.instance.send(cmd + data + "\n"); 
 		}
 	}
 
