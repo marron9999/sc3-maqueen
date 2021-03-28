@@ -188,7 +188,7 @@ class Scratch3_Maqueen_Blocks {
 	* @return {string} - the name of this extension.
 	*/
 	static get EXTENSION_NAME () {
-		return 'Maqueen';
+		return 'maqueen';
 	}
 
 	/**
@@ -518,7 +518,14 @@ class Scratch3_Maqueen_Blocks {
 		this.instance.send(CMD.MORTOR_ALL, 0);
 	}
 	maqueenMortorSpeed (arg1) {
-		return this.instance.mortor[arg1.SIDE];
+		if(arg1.SIDE == Maqueen_Side.LEFT) {
+			return this.instance.mortor[0];
+			return;
+		}
+		if(arg1.SIDE == Maqueen_Side.RIGHT) {
+			return this.instance.mortor[1];
+		}
+		return -1;
 	}
 	//maqueenSpeed () {
 	//	return this.instance.speed;
@@ -543,7 +550,14 @@ class Scratch3_Maqueen_Blocks {
 		}
 	}
 	maqueenLedState (arg1) {
-		return this.instance.led[arg1.SIDE];
+		if(arg1.SIDE == Maqueen_Side.LEFT) {
+			return this.instance.led[0];
+			return;
+		}
+		if(arg1.SIDE == Maqueen_Side.RIGHT) {
+			return this.instance.led[1];
+		}
+		return -1;
 	}
 
 	getDistance () {

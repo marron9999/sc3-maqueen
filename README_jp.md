@@ -4,7 +4,7 @@
 
 - このリポジトリ
 
-	MaqueenのGUI部
+	maqueenのGUI部
 
 ## ブロック
 
