@@ -204,7 +204,7 @@ class Scratch3_Maqueen_Blocks {
 			{
 				text: formatMessage({
 					id: 'maqueen.sideMenu.all',
-					default: 'all',
+					default: 'All',
 					description: 'label for "all" element in side picker'
 				}),
 				value: Maqueen_Side.ALL
@@ -217,7 +217,7 @@ class Scratch3_Maqueen_Blocks {
 			{
 				text: formatMessage({
 					id: 'maqueen.sideMenu.left',
-					default: 'left',
+					default: 'Left',
 					description: 'label for "left" element in side picker'
 				}),
 				value: Maqueen_Side.LEFT
@@ -225,7 +225,7 @@ class Scratch3_Maqueen_Blocks {
 			{
 				text: formatMessage({
 					id: 'maqueen.sideMenu.right',
-					default: 'right',
+					default: 'Right',
 					description: 'label for "right" element in side picker'
 				}),
 				value: Maqueen_Side.RIGHT
@@ -238,7 +238,7 @@ class Scratch3_Maqueen_Blocks {
 			{
 				text: formatMessage({
 					id: 'maqueen.switchMenu.on',
-					default: 'on',
+					default: 'On',
 					description: 'label for "on" element in switch picker'
 				}),
 				value: Maqueen_Switch.ON
@@ -246,7 +246,7 @@ class Scratch3_Maqueen_Blocks {
 			{
 				text: formatMessage({
 					id: 'maqueen.switchMenu.off',
-					default: 'off',
+					default: 'Off',
 					description: 'label for "on" element in switch picker'
 				}),
 				value: Maqueen_Switch.OFF
@@ -259,7 +259,7 @@ class Scratch3_Maqueen_Blocks {
 			{
 				text: formatMessage({
 					id: 'maqueen.enableMenu.enable',
-					default: 'enable',
+					default: 'Enable',
 					description: 'label for enable picker'
 				}),
 				value: Maqueen_Enable.ENABLE
@@ -267,7 +267,7 @@ class Scratch3_Maqueen_Blocks {
 			{
 				text: formatMessage({
 					id: 'maqueen.enableManu.disable',
-					default: 'disable',
+					default: 'Disable',
 					description: 'label for enable picker'
 				}),
 				value: Maqueen_Enable.DISABLE
@@ -305,7 +305,7 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'maqueenPatrolLeft',
 					text: formatMessage({
 						id: 'maqueen.PatrolLeft',
-						default: 'status(0-black,1-white) of patrol left',
+						default: 'Left patrol sensor (0-Black, 1-White)',
 						description: 'status of Maqeen patrol left'
 					}),
 					blockType: BlockType.REPORTER
@@ -314,7 +314,7 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'maqueenPatrolRight',
 					text: formatMessage({
 						id: 'maqueen.PatrolRight',
-						default: 'status(0-black,1-white) of patrol right',
+						default: 'Right patrol sensor (0-Black, 1-White)',
 						description: 'status of Maqeen patrol right'
 					}),
 					blockType: BlockType.REPORTER
@@ -323,7 +323,7 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'maqueenSetPatrol',
 					text: formatMessage({
 						id: 'maqueen.setPatrol',
-						default: '[ENABLE] patrol',
+						default: '[ENABLE] patrol sensor',
 						description: 'enable/disable of Maqueen patrol'
 					}),
 					blockType: BlockType.COMMAND,
@@ -339,8 +339,8 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'maqueenMortor',
 					text: formatMessage({
 						id: 'maqueen.Mortor',
-						default: 'move mortor [SIDE] by [SPEED]',
-						description: 'move Maqeen mortor by speed(-255 to 255)'
+						default: '[SIDE] motor speed to [SPEED] (-255 to 255)',
+						description: 'move Maqeen mortor by speed'
 					}),
 					blockType: BlockType.COMMAND,
 					arguments: {
@@ -359,7 +359,7 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'maqueenMortorStop',
 					text: formatMessage({
 						id: 'maqueen.MortorStop',
-						default: 'stop all mortor',
+						default: 'Stop all motors',
 						description: 'stop all Maqeen mortor'
 					}),
 					blockType: BlockType.COMMAND
@@ -368,7 +368,7 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'maqueenMortorSpeed',
 					text: formatMessage({
 						id: 'maqueen.MortorSpeed',
-						default: 'speed of mortor [SIDE]',
+						default: '[SIDE] motor speed',
 						description: 'speed of Maqeen mortor'
 					}),
 					blockType: BlockType.REPORTER,
@@ -408,7 +408,7 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'maqueenLed',
 					text: formatMessage({
 						id: 'maqueen.Led',
-						default: 'turn [SWITCH] LED [SIDE]',
+						default: '[SIDE] LED to [SWITCH]',
 						description: 'turn on/off Maqueen LED'
 					}),
 					blockType: BlockType.COMMAND,
@@ -429,7 +429,7 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'maqueenLedState',
 					text: formatMessage({
 						id: 'maqueen.LedState',
-						default: 'status of LED [SIDE]',
+						default: '[SIDE] LED',
 						description: 'status of maqueen LED'
 					}),
 					blockType: BlockType.REPORTER,
@@ -445,7 +445,7 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'getDistance',
 					text: formatMessage({
 						id: 'maqueen.getDistance',
-						default: 'Distance to obstacles ahead (cm)',
+						default: 'Distance to the front (cm)',
 						description: 'distance to obstacles ahead (cm)'
 					}),
 					blockType: BlockType.REPORTER
@@ -454,7 +454,7 @@ class Scratch3_Maqueen_Blocks {
 					opcode: 'setDistance',
 					text: formatMessage({
 						id: 'maqueen.setDistance',
-						default: 'round [ROUND] of distance',
+						default: 'Round distance with [ROUND]',
 						description: 'round value of distance'
 					}),
 					blockType: BlockType.COMMAND,
