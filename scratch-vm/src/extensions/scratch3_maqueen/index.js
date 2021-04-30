@@ -298,6 +298,12 @@ class Scratch3_Maqueen_Blocks {
 		return {
 			id: Scratch3_Maqueen_Blocks.EXTENSION_ID,
 			name: Scratch3_Maqueen_Blocks.EXTENSION_NAME,
+			//color1: '#0FBD8C',
+			color1:   '#0F9D4C',
+			//color2: '#0DA57A',
+			color2:   '#0D853A',
+			//color3: '#0B8E69',
+			color3:   '#0B6E29',
 			blockIconURI: blockIconURI,
 			//showStatusButton: false,
 			blocks: [
